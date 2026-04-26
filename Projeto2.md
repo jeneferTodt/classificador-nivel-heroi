@@ -15,7 +15,7 @@ Criar um sistema que:
 
 ## 🚀 Demonstração
 
-file:///C:/Users/jeanc/Downloads/js-curso-2-aula1%20(2)/rankpartidas.html
+https://jenefertodt.github.io/classificador-nivel-heroi/
 
 ---
 
