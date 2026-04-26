@@ -1,0 +1,26 @@
+<script>
+function calcularRank(vitorias, derrotas) {
+    let saldo = vitorias - derrotas;
+    let nivel = "";
+
+    if (vitorias <= 10) nivel = "Ferro";
+    else if (vitorias <= 20) nivel = "Bronze";
+    else if (vitorias <= 50) nivel = "Prata";
+    else if (vitorias <= 80) nivel = "Ouro";
+    else if (vitorias <= 90) nivel = "Diamante";
+    else if (vitorias <= 100) nivel = "Lendário";
+    else nivel = "Imortal";
+
+    return { saldo, nivel };
+}
+
+let vitorias = parseInt(prompt("Digite o número de vitórias:"));
+let derrotas = parseInt(prompt("Digite o número de derrotas:"));
+
+if (isNaN(vitorias) || isNaN(derrotas)) {
+    alert("Por favor, digite apenas números válidos!");
+} else {
+    let resultado = calcularRank(vitorias, derrotas);
+    alert(`O Herói tem de saldo de ${resultado.saldo} está no nível de ${resultado.nivel}`);
+}
+</script>
