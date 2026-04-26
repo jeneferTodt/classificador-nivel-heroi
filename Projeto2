@@ -1,0 +1,114 @@
+# 🧮 Calculadora de Partidas Rankeadas
+
+Projeto desenvolvido como parte dos desafios da DIO, com foco em lógica de programação utilizando JavaScript.
+
+---
+
+## 🎯 Objetivo
+
+Criar um sistema que calcula o **saldo de vitórias** de um jogador e define seu **nível ranqueado** com base na quantidade de vitórias.
+
+---
+
+## 🛠 Tecnologias utilizadas
+
+* JavaScript
+* HTML (para versão com interação via navegador)
+
+---
+
+## 🧠 Lógica aplicada
+
+* Variáveis
+* Operadores matemáticos
+* Estruturas condicionais (`if / else`)
+* Funções
+* Validação de dados
+
+---
+
+## 🚀 Como funciona
+
+1. O usuário informa:
+
+   * Número de vitórias
+   * Número de derrotas
+
+2. O sistema calcula:
+
+   ```
+   saldo = vitórias - derrotas
+   ```
+
+3. Classifica o jogador:
+
+| Vitórias | Nível    |
+| -------- | -------- |
+| ≤ 10     | Ferro    |
+| 11 - 20  | Bronze   |
+| 21 - 50  | Prata    |
+| 51 - 80  | Ouro     |
+| 81 - 90  | Diamante |
+| 91 - 100 | Lendário |
+| ≥ 101    | Imortal  |
+
+---
+
+## 💻 Código
+
+```javascript
+function calcularRank(vitorias, derrotas) {
+    let saldo = vitorias - derrotas;
+    let nivel = "";
+
+    if (vitorias <= 10) nivel = "Ferro";
+    else if (vitorias <= 20) nivel = "Bronze";
+    else if (vitorias <= 50) nivel = "Prata";
+    else if (vitorias <= 80) nivel = "Ouro";
+    else if (vitorias <= 90) nivel = "Diamante";
+    else if (vitorias <= 100) nivel = "Lendário";
+    else nivel = "Imortal";
+
+    return { saldo, nivel };
+}
+```
+
+---
+
+## 🖥 Versão interativa
+
+O projeto também possui uma versão com entrada de dados via `prompt()` no navegador.
+
+---
+
+## 📌 Exemplo de saída
+
+```
+O Herói tem de saldo de 55 está no nível de Ouro
+```
+
+---
+
+## 📂 Estrutura do projeto
+
+```
+📁 calculadora-rankeada
+ ├── index.html
+ ├── script.js (opcional)
+ └── README.md
+```
+
+---
+
+## 🚀 Melhorias futuras
+
+* Interface com input e botão
+* Validação mais robusta
+* Estilização com CSS
+* Integração com backend
+
+---
+
+## 👩‍💻 Autora
+
+Projeto desenvolvido por você como parte da formação na DIO 🚀
