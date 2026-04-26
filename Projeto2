@@ -15,8 +15,7 @@ Criar um sistema que:
 
 ## 🚀 Demonstração
 
-👉 (adicione aqui seu link do GitHub Pages)
-
+file:///C:/Users/jeanc/Downloads/js-curso-2-aula1%20(2)/rankpartidas.html
 ---
 
 ## 🛠 Tecnologias utilizadas
@@ -61,14 +60,6 @@ Este projeto utiliza:
 | 81 - 90  | Diamante |
 | 91 - 100 | Lendário |
 | ≥ 101    | Imortal |
-
----
-
-## 🖥 Versão interativa
-
-O projeto possui uma versão com entrada de dados via `prompt()` no navegador.
-
-file:///C:/Users/jeanc/Downloads/js-curso-2-aula1%20(2)/rankpartidas.html
 
 ---
 
